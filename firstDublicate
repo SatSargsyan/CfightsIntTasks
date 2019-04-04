@@ -32,3 +32,33 @@ string helloWorld(string name) {
     Console.Write("This prints to the console when you Run Tests");
     return "Hello, " + name;
 }
+
+```
+int firstDuplicate(int[] a) {
+  
+    int min = -1; 
+    
+    // Creates an empty hashset  
+    HashSet<int> set = new HashSet<int>();  
+  
+  
+    
+        for (int i = 0;i<a.Length; i++) 
+        { 
+             
+            if (!set.Contains(a[i])) 
+            { 
+                set.Add(a[i]); 
+            } 
+  
+            else  
+            {                
+                
+                return a[i];
+            } 
+        } 
+  ```
+       
+          return -1;        
+}
+```
