@@ -33,7 +33,8 @@ string helloWorld(string name) {
     return "Hello, " + name;
 }
 
-```
+
+```C#
 int firstDuplicate(int[] a) {
   
     int min = -1; 
@@ -61,4 +62,14 @@ int firstDuplicate(int[] a) {
        
           return -1;        
 }
+```
+
+```Python
+def firstDuplicate(a):
+    mySet=set()
+    for el in a:
+        if el in mySet:
+            return el
+        mySet.add(el)
+    return -1
 ```
