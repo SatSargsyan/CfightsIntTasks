@@ -34,7 +34,8 @@ string helloWorld(string name) {
 }
 
 
-```C#
+```C# using hashset
+
 int firstDuplicate(int[] a) {
   
     int min = -1; 
@@ -60,6 +61,23 @@ int firstDuplicate(int[] a) {
         } 
       
           return -1;        
+}
+```
+
+``` C# using dictionary
+int firstDuplicate(int[] a) {
+    // (value, index)
+    Dictionary<int,int> dups = new Dictionary<int, int>();
+    for(int i=0; i<a.Length; i++)
+    {
+        if(dups.ContainsKey(a[i])) {
+            return a[i];
+        }
+        else {
+            dups.Add(a[i],i);
+        }
+    }
+    return -1;
 }
 ```
 
