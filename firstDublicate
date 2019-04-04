@@ -58,11 +58,11 @@ int firstDuplicate(int[] a) {
                 return a[i];
             } 
         } 
-  ```
-       
+      
           return -1;        
 }
 ```
+
 
 ```Python
 def firstDuplicate(a):
